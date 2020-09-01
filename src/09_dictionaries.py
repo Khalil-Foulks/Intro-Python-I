@@ -51,6 +51,12 @@ for i in waypoints:
             i.update({"lon": -130, x:"not a real place"})
 print(f"2nd print: {waypoints}")
 
+# simplier solution
+# for i in waypoints:
+#     if i["name"] == "a place":
+#         i.update({"lon": -130, x:"not a real place"})
+
+
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 for i in waypoints:

@@ -9,7 +9,7 @@ import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
 # Print out the command line arguments in sys.argv, one per line:
-# YOUR CODE HERE
+# YOUR CODE HERE # to print one per line do a for loop
 
 print(sys.argv)
 
