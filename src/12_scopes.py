@@ -5,7 +5,10 @@
 x = 12
 
 def change_x():
+    global x      # 'global' keyword creates a global variable inside a function
     x = 99
+
+
 
 change_x()
 
@@ -19,6 +22,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y    # 'non local' makes the variable inside the inner function no longer in local scope
         y = 999
 
     inner()
