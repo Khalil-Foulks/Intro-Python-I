@@ -10,10 +10,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
-path = 'Documents/LambdaAssignments/Intro-Python-I/src/foo.txt'
-with open path as f:
+with open('foo.txt') as f: # with statement auto closes file
     read_data = f.read()
-f.closed
+
+print(read_data)
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
@@ -21,3 +22,12 @@ f.closed
 
 # YOUR CODE HERE
 
+with open('bar.txt', 'w') as f:
+    f.write('line 1 from bar.txt \n')
+    f.write('line 2 from bar.txt \n')
+    f.write('line 3 from bar.txt \n')
+
+with open('bar.txt') as f:
+    read_data = f.read()
+    
+print(read_data)
