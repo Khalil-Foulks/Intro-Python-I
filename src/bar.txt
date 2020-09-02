@@ -1,0 +1,3 @@
+line 1 from bar.txt 
+line 2 from bar.txt 
+line 3 from bar.txt 
